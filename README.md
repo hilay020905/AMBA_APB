@@ -16,6 +16,10 @@ The verification environment contains:
 * Basic self-checking logic
 * Simulation finish and pass/fail reporting
 
+## ℹ️ About APB AMBA
+
+The Advanced Peripheral Bus (APB) is a part of the AMBA (Advanced Microcontroller Bus Architecture) specification developed by ARM. It is optimized for low‐bandwidth and low‐power communication with peripheral components. APB uses a simple, non‑pipelined protocol that does not support burst transfers or complex handshaking like AHB or AXI, making it ideal for register access inside SoCs. Typical APB signals include PCLK (clock), PRESETn (reset), PSEL (select), PENABLE (enable), PWRITE (read/write control), PADDR (address), PWDATA (write data), and PRDATA (read data). APB transactions consist of two phases: setup and enable. During setup, the address and control signals are driven; during enable, data transfer occurs. This simplicity reduces design complexity and enables easier verification.
+
 ## 🛠️ Prerequisites
 
 To run the RTL and testbench, you need:
