@@ -46,23 +46,6 @@ do wave.do        # if you have a waveform script
 run -all
 ```
 
-### Using VCS
-
-```bash
-# 1. Compile
-vcs -full64 -sverilog APB_MEMORY.sv APB_MEMORY_TB.sv -l compile.log
-
-# 2. Run
-./simv -l run.log
-```
-
-## 📑 File Structure
-
-| File                                   | Description                             |
-| -------------------------------------- | --------------------------------------- |
-| APB\_MEMORY.sv / APB\_MEMORY.v         | RTL implementation of APB memory module |
-| APB\_MEMORY\_TB.sv / APB\_MEMORY\_TB.v | Testbench file for verification         |
-
 ## ✅ Expected Output
 
 The simulation should print messages indicating the success of each transaction and end with a “TEST PASSED” message if all read/write operations were correctly verified.
