@@ -1,4 +1,4 @@
-# APB Memory RTL and Verification Project
+# AMBA APB Memory RTL and Verification 
 
 This project implements an APB (Advanced Peripheral Bus) compliant memory module in SystemVerilog/Verilog along with a testbench for functional verification.
 
