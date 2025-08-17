@@ -2,7 +2,7 @@
 
 This project implements an APB (Advanced Peripheral Bus) compliant memory module in SystemVerilog/Verilog along with a testbench for functional verification.
 
-## 📌 Project Overview
+## Project Overview
 
 The goal of this project is to design and verify an APB memory slave that interacts with an APB master and supports basic read and write transactions. Both RTL and verification environments are included:
 
@@ -27,7 +27,7 @@ To run the RTL and testbench, you need:
 * A SystemVerilog supported simulator (e.g., **ModelSim**, **VCS**, **QuestaSim**, etc.)
 * A working command-line interface to compile and run the simulation
 
-## ▶️ How to Run
+##  How to Run
 
 ### Using ModelSim / QuestaSim
 
@@ -46,16 +46,8 @@ do wave.do        # if you have a waveform script
 run -all
 ```
 
-## ✅ Expected Output
+## Expected Output
 
 The simulation should print messages indicating the success of each transaction and end with a “TEST PASSED” message if all read/write operations were correctly verified.
 
 ---
-
-If you want to extend this project, you can add:
-
-* Coverage collection
-* Assertions
-* Randomized stimulus using UVM
-
-Feel free to modify the testbench for more complex testcases.
